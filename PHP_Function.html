@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        function name($name, $year) {
+            if($year < 2000) {
+                if($name == "Lee") {
+                    echo "성씨 $name 출생년도 $year </br>";
+                }
+            }
+        }
+        name("Lee", "1991");
+        name("Yu" , "1991");
+        name("Kim", "1983");
+        
+        // 결과는 성씨 Lee 출생년도 1991
+    ?>
+</body>
+</html>
