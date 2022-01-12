@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        $item = array("Volvo", "BMW", "Toyota");
+    ?>
+    
+    <input id="test" type="hidden" value="<?php echo "$item[0]" ?>">
+    <button onclick="functionTest()">click</button>
+
+    <script>
+        const result =document.getElementById("test").value;
+
+        function functionTest() {
+            return alert(result)
+        }
+    </script>
+</body>
+</html>
