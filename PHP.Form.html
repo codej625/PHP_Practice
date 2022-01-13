@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <!-- form을 사용하여 request.php으로 데이터 전송 -->
+    <form action="request.php" method="post">
+        <label for="ex01">name</label>
+        <input type="text" id="ex01" name="name">
+        <br>
+        <label for="ex02">age</label>
+        <input type="text" id="ex02" name="age">
+        <br>
+        <input type="submit">
+    </form>
+
+    <!-- request.php -->
+    <?php
+
+        <!-- POST 전송받은 데이터 처리-->
+        $name = $_POST["name"];
+        $age = $_POST["age"];
+        
+        echo $name . "님의 나이는 " . $age . "입니다.";
+
+    ?>
+
+</body>
+</html>
